@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@200;400;500&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Fastlane || Demander un devis</title>
+
+    <link rel="stylesheet" href="services.css">    
+    <link rel="stylesheet" href="devis.css">
+    <link rel="stylesheet" href="menuR.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("xuYS10OFPInBycW65");
+    })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul data-aos="zoom-in-right" data-aos-delay="400">                
+                <li><a href="../index.html"><img src="../images/image_Desktop_2/logoFastLaneRed.svg" alt="logoFastlane"></a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./apropos.html">À Propos</a></li>
+                <li><a href="./realisations.html">Réalisations</a></li>
+            </ul>
+            <button data-aos="zoom-in-right" data-aos-delay="600"><a href="#"> Demander un devis</a></button>
+        </nav>
+        <ul class="header-mobile-nv" data-aos="zoom-in-right" data-aos-delay="500">
+            <li><a href="../index.html"><img src="../images/image_Desktop_2/logoFastLaneRed.svg" alt="logomobile"></a></li>
+            <ul class="mobile-menu">
+                <li><i class="fa-solid fa-bars"></i></li>
+                <li><i class="fa-solid fa-xmark"></i></li>
+            </ul>
+        </ul>
+</header>
+<main>
+    <section class="demander-un-devis" id="demanderundevis" data-aos="fade-up" data-aos-delay="400">
+        <img src="../images/image_Desktop_6/devismen.png" alt="Ask Devis" data-aos="zoom-in-right" data-aos-delay="500">
+        <div class="form-ctn" data-aos="zoom-in-left" data-aos-delay="500">
+            <h2>
+                Prêt à commencer avec nous? <span> Demandez un devis ...</span>
+            </h2>
+            <p class="p-desc">
+                Chez Fast Lane, Nous aimons relever des défis de plus en plus osés. <br> N’hésitez pas à nous contacter
+                pour discuter des possibilités de votre projet. <br>
+                Optez pour <strong> « L'accélérateur de changement » </strong>.
+            </p>
+            <form class="ask-devis" id="MonDevis">
+                <label for="none">
+                    <div class="update-this-select-p">
+                        <input type="text" name="name" id="name" placeholder="Nom" required>
+                        <p><span>¡</span></p>
+                    </div>
+                    <div class="update-this-select-p">
+                        <input type="text" name="entreprise" id="entreprise" placeholder="entreprise" >
+                        <p><span>¡</span></p>
+                    </div>
+                </label>
+                <div class="update-this-select-p">
+                    <input type="text" name="objet" id="objet" placeholder="objet/service demandé" required>
+                    <p><span>¡</span></p>
+                </div>
+                <div class="update-this-select-p">
+                    <input type="tel" name="numero" id="numero" placeholder="Numéro de téléphone" required>
+                    <p><span>¡</span></p>
+                </div>
+                <div class="update-this-select-p">
+                    <input type="email" name="mail" id="mail" placeholder="Adresse mail" required>
+                    <p><span>¡</span></p>
+                </div>
+                <div>
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Plus de détailles ici"></textarea>
+                    <p><span>¡</span></p>
+                </div>
+                <button type="submit">Demander un devis</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="start" data-aos="zoom-in-right" data-aos-delay="500">
+        <img src="../images/image_Desktop_1/logoFastlaneWhite.svg" alt="logoFooter">
+        <ul>
+            <li><a href=""><img src="../images/image_Desktop_1/Facebook.svg" alt="Facebook"></a></li>
+            <li><a href=""><img src="../images/image_Desktop_1/Twitter.svg" alt="Twitter"></a></li>
+            <li><a href=""><img src="../images/image_Desktop_1/Instagram.svg" alt="Instagram"></a></li>
+            <li><a href=""><img src="../images/image_Desktop_1/LinkedIn.svg" alt="LinkedIn"></a></li>
+        </ul>
+        <button><a href="#">Demander un devis</a></button>
+    </div>
+         <ul class="first-ul" data-aos="zoom-in-right" data-aos-delay="600">
+            <li>À Propos
+                <ul>
+                    <li><a href="./apropos.html">qui sommes-nous ?</a></li>
+                    <li><a href="./apropos.html#lequipe">notre equipe</a></li>
+                    <li><a href="./realisations.html">Nos realisations</a></li>
+                    <li><a href="./apropos.html#statistiques">Fastlane en quelques chiffres</a></li>
+                    <li><a href="./apropos.html#temoin">pourquoi travailler avec nous ?</a></li>
+                </ul>
+            </li>
+            <li>Contacts
+                <ul>
+                    <li><a href="#contact">Contacter</a></li>
+                    <li><a href="#">demander un devis</a></li>
+                </ul>
+            </li>
+        </ul>
+    <ul data-aos="zoom-in-right" data-aos-delay="500">
+        <li>Nos services
+            <ul>
+                <li><a href="../index.html#sitesweb">Conceptions web</a></li>
+                <li><a href="../index.html#sitesweb">Creer mon appli mobile / Web ?</a></li>
+                <li><a href="../index.html#reseaux">Resaeux et infrastructures</a></li>
+                <li><a href="../index.html#reseaux">Videosurveillance</a></li>
+                <li><a href="../index.html#gestionentreprise">Systemes de gestion - ERP</a></li>
+                <li><a href="../index.html#communicationdigital">Logos et chartes graphiques</a></li>
+                <li><a href="../index.html#communicationdigital">Supports de communication</a></li>
+                <li><a href="../index.html#communicationdigital">Marketing digital</a></li>
+                <li><a href="../index.html#communicationdigital">Montage video</a></li>
+                <li><a href="../index.html#offreinternet">Fourniture d'accès internet</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="end" id="contact" data-aos="zoom-in-right" data-aos-delay="600">
+        <div>
+            <button>Telephone</button>
+            <p>
+                <span>+237</span><strong> 698 754 458 </strong> <br>
+                <span>+237</span><strong>658 471 232</strong>
+            </p>
+        </div>
+        <div>
+            <button>Adresse Mail</button>
+            <p><strong>contact@fastlane.com</strong></p>
+        </div>
+        <div>
+            <button>Localiisation</button>
+            <p>
+                <strong>Cameroun-yaoundé</strong> <br>
+                derriere l'immeuble JACO - <strong>BP</strong> 5648 Yde
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="./app.js"></script> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

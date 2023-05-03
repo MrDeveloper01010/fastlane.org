@@ -1,0 +1,92 @@
+.realisation-nav {
+    margin-bottom: 14px;
+}
+.realisation-nav ul li{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+}
+
+section.img-before-devis-ctn{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom:0px;
+}
+
+.img-before-devis-ctn>div{
+    position: relative;
+    width: 274px;
+    height: 274px;
+}
+
+.img-before-devis-ctn>a{
+    position: relative;
+    width: 274px;
+    height: 274px;
+}
+
+.img-before-devis-ctn a div.hover-desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 274px;
+    height: 274px;
+    background-color: hsla(0, 0%, 12%, 0.8);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    opacity:0;
+    transition: 500ms;
+}
+
+.img-before-devis-ctn a:hover>div.hover-desc{
+    opacity: 1;
+    transition: 500ms;
+}
+
+
+div.hover-desc button{
+    border: none;
+    border-radius: 4px;
+    background-color: hsla(144, 59%, 55%, 1);
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    width: 110px;
+    height: 30px;
+}
+
+@media(max-width: 760px){
+    section.hidden{
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+    nav.realisation-nav ul{
+        gap: 10px;
+    }
+}
+
+
+
+@media(max-width: 400px){
+    nav.realisation-nav ul{
+        gap: 5px;
+    }
+
+}
+
+@media(max-width: 380px){
+    nav.realisation-nav ul li{
+        font-size: 10px;
+    }
+}
+

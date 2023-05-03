@@ -1,0 +1,117 @@
+
+
+@media(max-width:760px){
+    header .header-text-ctn{
+        justify-content: center;
+    }
+
+    nav{
+        z-index: 1;
+        padding: 0 20px;
+        width: 90%;
+        height: 50px;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../images/image_Desktop_1/overlayHeader.svg), hsla(0, 100%, 50%, 0.7);
+        transform: translateY(-110%);
+        transition: 800ms;
+        margin: 0;
+    }
+    
+    nav.display-menu{
+        transform: translateY(0%);
+        transition: 800ms;
+    }
+    nav ul{
+        gap: 10px;
+    }
+    
+    nav ul li:first-child{
+        display: none;
+    }
+    
+    nav ul li a{
+        font-size: 12px;
+    }
+    
+    .header-mobile-nv{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        padding: 0 30px;
+    }
+    
+    ul.mobile-menu{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    ul.mobile-menu li>i{
+        cursor: pointer;
+    }
+    
+    ul.mobile-menu li:last-child{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1000ms;
+    }
+    
+    ul.mobile-menu li:first-child.hover{
+        opacity: 0;
+        pointer-events: none;
+        transition:1000ms;
+    }
+    ul.mobile-menu li:first-child.hover ~ li:last-child{
+        opacity: 1;
+        pointer-events: initial;
+        transition: 1000ms;
+    }
+
+    ul.mobile-menu li>i{
+        color: hsl(0, 0%, 100%);
+        font-size: 2rem;
+    }
+
+    @media(max-width:530px){
+        nav{
+            padding: 0 10px;
+            width: 85%;
+        }
+        nav ul{
+            gap: 10px;
+        }
+        nav ul li a, nav button a{
+            font-size: 12px;
+        }
+    }
+
+    @media(max-width:460px){
+        .header-text-ctn nav{
+           flex-direction: column;
+           justify-content: space-around;
+           align-items: center;
+            height: 157px;
+            width: 80%;
+        }
+        nav ul{
+            gap: 20px;
+        }
+        nav ul li a, nav button a{
+            font-size: 12px;
+        }
+    }
+}

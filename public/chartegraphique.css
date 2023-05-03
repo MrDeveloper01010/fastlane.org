@@ -1,0 +1,182 @@
+
+
+div.describe-header{
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    padding-left: 20px;
+}
+
+.describe-header button{
+    width: 165px;
+    height: 30.56px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    background: hsla(144, 68%, 43%, 1);
+    font-weight: 500;
+    align-content: flex-start;
+}
+
+.describe-header h1{
+    max-width: 734px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -2px;
+    text-align: left;
+    color: hsla(0, 0%, 9%, 1);
+    margin-bottom: 30px;
+}
+
+section.img-ctn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.img-ctn img{
+    object-fit: contain;
+}
+
+section.devis-on-charte{
+    width: 100%;
+    height: 375px;
+    background-color: hsla(0, 100%, 50%, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 156px;
+    margin-bottom: 79px;
+    z-index: 0;
+}
+
+
+div.asc-ctn{
+    max-width: 432px;
+    color: hsla(0, 0%, 100%, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.asc-ctn h2{
+    max-width: 433px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: -2px;
+    text-align: left;
+
+}
+
+.asc-ctn .btn-ctn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-ctn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 208.54px;
+    height: 58.44px;
+    border: solid hsl(0, 0%, 100%) 1px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-ctn a:first-child{
+    color: hsla(0, 100%, 50%, 1);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.asc-ctn .call button{
+    height: 20px;
+    border: none;
+    color: hsla(0, 0%, 9%, 1);
+    font-weight: 700;
+    font-size: 12px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.call p{
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    width: 100%;
+    text-align: left;
+}
+
+@media(max-width:890px){
+    section.devis-on-charte{
+        gap: 5px;
+    }
+    .devis-on-charte>img{
+        object-fit: contain;
+        width: 40%;
+        height: 375px;
+    } 
+
+    div.asc-ctn{
+        width: 60%;
+    }
+    .asc-ctn .btn-ctn{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .call p{
+        font-size: 20px;
+        letter-spacing: -0.5px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media(max-width:655px){
+    section.devis-on-charte{
+        width: 100%;
+    }
+    .devis-on-charte>img{
+        display: none;
+    } 
+
+    section.devis-on-charte{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+
+    div.asc-ctn{
+        max-width: 100%;
+        width: 500px;
+        padding: 0 20px;
+    }
+
+    .asc-ctn .btn-ctn{
+        gap: 10px;
+    }
+
+    .call p{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:385px){
+
+    div.asc-ctn{
+        width: 100%;
+    }
+    .call p{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,15 @@
+.demander-un-devis{
+    margin-top: 40px;
+    gap: 33px;
+    padding: 0 20px;
+}
+
+button[type="submit"]{
+    cursor: pointer;
+}
+
+@media(max-width:760px){
+    .demander-un-devis{
+        margin-bottom: 40px;
+    }
+}
